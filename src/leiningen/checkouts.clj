@@ -33,7 +33,7 @@
 
 (defn list-checkouts
   [^File dir]
-  (seq (.listFiles (File. dir "checkouts")))
+  (sort (seq (.listFiles (File. dir "checkouts"))))
 )
 
   
